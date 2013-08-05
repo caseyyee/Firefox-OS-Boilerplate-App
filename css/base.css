@@ -79,7 +79,7 @@ header.show-install h1 {
 }
 
 #main {
-    padding: 1rem 1rem 6rem 1rem;
+    
 }
 
 #main h2 {
@@ -123,3 +123,4 @@ footer {
 [role="toolbar"] li button.update {
     background-image: url("../images/toolbars/icons/update.png");
 }
+
