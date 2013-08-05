@@ -48,7 +48,8 @@ function createRoundBody() {
 }
 
 function setupPhysics() {
-	world = new box2d.b2World(new box2d.b2Vec2(0, 50), true);	// define gravity vector, allow bodies to sleep
+	world = new box2d.b2World(new box2d.b2Vec2(0, 50)	// gravity vector
+										, true);		// allow bodies to sleep
 
 	// create ground
 	var fixDef  = new box2d.b2FixtureDef();
@@ -73,7 +74,9 @@ function setupPhysics() {
 function tick() {
 	stage.update();
 	world.DrawDebugData();
-	world.Step(1/60, 10, 10);
+	world.Step(1/60 // frame rate
+			, 10	// velocity iterations
+			, 10);	// position iterations
 	world.ClearForces();
 };
 
