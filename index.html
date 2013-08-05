@@ -19,10 +19,12 @@
     <link rel="stylesheet" type="text/css" href="css/headers.css">
     <link rel="stylesheet" type="text/css" href="css/buttons.css">
     <link rel="stylesheet" type="text/css" href="css/toolbars.css">
+    <link rel="stylesheet" type="text/css" href="css/physics1.css">
     <title>Firefox OS Boilerplate App</title>
 </head>
 
 <body>
+
 
     <section role="region">
         <header>
@@ -39,74 +41,10 @@
 
 
     <div id="main">
+        <div id="physics1">
+            <canvas id="Physics1Canvas" width="320" height="320"></canvas>
+        </div>
 
-        <p id="installation-instructions">Press the + button in the top right corner to install this app.</p>
-
-        <h2>WebActivities</h2>
-
-        <button id="pick-image">Pick image</button>
-        <div id="image-presenter"></div>
-
-        <button id="pick-anything">Pick anything</button>
-
-        <button id="record">Take picture</button>
-
-        <button id="dial">Dial number</button>
-
-        <button id="send-sms">Send SMS</button>
-
-        <button id="add-contact">Add contact</button>
-
-        <button id="share">Share URL</button>
-
-        <button id="share-image">Share Image</button>
-        <img id="image-to-share" src="images/logo64.png" alt="">
-
-        <button id="view-url">View URL</button>
-
-        <button id="compose-email">Compose mail</button>
-
-        <button id="save-bookmark">Save bookmark</button>
-
-
-        <h2>WebAPIs</h2>
-
-        <button id="add-notification">Add notification</button>
-
-        <button id="lock-orientation">Orientation lock</button>
-
-        <button id="vibrate">Vibrate 2 sec</button>
-
-        <button id="add-alarm">Add alarm</button>
-
-        <button id="check-connection">Check connection</button>
-        <div id="connection-display">Connection values should show up here</div>
-
-        <button id="check-battery">Check battery</button>
-        <div id="battery-display">Battery values should show up here</div>
-
-        <button id="geolocation">Geolocation</button>
-        <div id="geolocation-display">Geolocation coords should show up here</div>
-
-        <button id="ambient-light">Ambient light</button>
-        <div id="ambient-light-display">Ambient light should show up here</div>        
-
-        <button id="proximity">Proximity</button>
-        <div id="proximity-display">Proximity should show up here</div>
-
-        <button id="user-proximity">User proximity</button>
-        <div id="user-proximity-display">User proximity should show up here</div>
-
-        <button id="device-orientation">Device orientation</button>
-        <div id="device-orientation-display">Device orientation should show up here</div>
-
-        <h3>Privileged APIs</h3>
-
-        <button id="cross-domain-xhr">Cross-domain XHR</button>
-        <div id="cross-domain-xhr-display"></div>
-
-        <button id="device-storage-pictures">deviceStorage - pictures</button>
-        <div id="device-storage-pictures-display"></div>
     </div>
 
     <footer>
@@ -120,6 +58,11 @@
     <script type="text/javascript" src="js/base.js"></script>
     <script type="text/javascript" src="js/webapp.js"></script>
     <script type="text/javascript" src="js/offline.js"></script>
+
+    <script type="text/javascript" src="js/lib/Box2dWeb-2.1.a.3.min.js"></script>
+    <script type="text/javascript" src="js/lib/easeljs-0.6.1.min.js"></script>
+
+    <script type="text/javascript" src="js/physics1.js"></script>
 
     <!-- 
         Loosely based on fxosstub: https://github.com/Jaxo/fxosstub
