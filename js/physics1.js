@@ -57,10 +57,11 @@ function createRoundBody() {
 
 	// create coresponding dom element
 	var elem = document.createElement("div");
-	elem.style["position"] = "absolute";
-	elem.style["width"] = Math.round(body.diam)+"px";
-	elem.style["height"] = Math.round(body.diam)+"px";
-	elem.style["background"] = "red";
+	elem.style.position = "absolute";
+	elem.style.width = Math.round(body.diam*2)+"px";
+	elem.style.height = Math.round(body.diam*2)+"px";
+	elem.style.borderRadius = "50%";
+	elem.style.background = "green";
 	container.appendChild(elem);
 	// add user data reference to box2d body def
 	b2body.m_userData = { domElem: elem }; 
@@ -108,8 +109,8 @@ function updateDom() {
 				//console.log(f.m_userData.domElem.offsetWidth);
 				var x = Math.floor((f.m_body.m_xf.position.x * SCALE));
 				var y = Math.floor((f.m_body.m_xf.position.y * SCALE));
-				f.m_userData.domElem.style["left"] = x+"px";
-				f.m_userData.domElem.style["top"] = y+"px";
+				f.m_userData.domElem.style["left"] = x-(f.m_userData.domElem.offsetWidth/2)+"px";
+				f.m_userData.domElem.style["top"] = y-(f.m_userData.domElem.offsetHeight/2)+"px";
 			}
 		}
 	}
