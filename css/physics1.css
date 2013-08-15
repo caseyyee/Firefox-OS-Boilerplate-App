@@ -2,7 +2,7 @@
 	display: none;
 }
 #Physics1 {
-	border: 1px solid red;
+	border-bottom: 10px solid gray;
 	width: 320px;
 	height: 320px;
 	position: relative;

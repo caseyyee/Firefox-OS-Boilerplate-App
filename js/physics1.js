@@ -61,7 +61,7 @@ function createRoundBody() {
 	elem.style.width = Math.round(body.diam*2)+"px";
 	elem.style.height = Math.round(body.diam*2)+"px";
 	elem.style.borderRadius = "50%";
-	elem.style.background = "green";
+	elem.style.background = "black";
 	container.appendChild(elem);
 	// add user data reference to box2d body def
 	b2body.m_userData = { domElem: elem }; 
