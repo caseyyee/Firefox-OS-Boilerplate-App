@@ -1,3 +1,6 @@
+/*
+http://caseyyee.github.io/Firefox-OS-Box2D-DOM-physics/
+*/
 
 var box2d = { 
 	b2Vec2 : Box2D.Common.Math.b2Vec2,

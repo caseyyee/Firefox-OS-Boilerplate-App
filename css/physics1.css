@@ -1,9 +1,10 @@
 #Physics1Canvas {
-	display: none;
+	display: none; 
 }
 #Physics1 {
 	border-bottom: 10px solid gray;
 	width: 320px;
 	height: 320px;
 	position: relative;
+	overflow: hidden;
 }
